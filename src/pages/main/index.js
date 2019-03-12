@@ -45,11 +45,7 @@ class Main extends Component {
           {this.props.favorites.map(favorite => (
             <li key={favorite.id}>
               <p>
-                <strong>{favorite.name}</strong>
-                {' '}
-(
-                {favorite.description}
-)
+                <strong>{favorite.name}</strong> ({favorite.description})
               </p>
               <a href={favorite.url}>See repo</a>
             </li>
